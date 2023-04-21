@@ -1,11 +1,11 @@
-.btn-main, .btn-sec, .btn-sec-s, .btn-main-s {
-  background-color: #0075FF;
-  color: white;
+.btn-main, .btn-main-s {
   padding: 0.25rem 1.5rem;
   border-radius: 0.25rem;
+  background-color: #0075FF;
+  color: white;
   border: solid 1px #0075FF;
 }
-.btn-main:hover, .btn-sec:hover, .btn-sec-s:hover, .btn-main-s:hover {
+.btn-main:hover, .btn-main-s:hover {
   background-color: white;
   color: #0075FF;
 }
@@ -15,6 +15,8 @@
 }
 
 .btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
   color: #000000;
   background-color: transparent;
   border: none;

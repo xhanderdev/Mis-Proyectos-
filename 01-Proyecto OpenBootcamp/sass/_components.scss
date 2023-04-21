@@ -1,3 +1,8 @@
+@mixin btn-base {
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
 @mixin btn-sm-modify{
     font-size: 0.75rem;
     padding: 0.1rem 1rem;
@@ -6,10 +11,9 @@
 $color-main: #0075FF;
 
 .btn-main {
+    @include btn-base();
     background-color: $color-main;
     color: white;
-    padding: 0.25rem 1.5rem;
-    border-radius: 0.25rem;
     border: solid 1px $color-main;
 
     &:hover {
@@ -24,7 +28,7 @@ $color-main: #0075FF;
 }
 
 .btn-sec {
-    @extend .btn-main;
+    @include btn-base();
     color: #000000;
     background-color: transparent;
     border: none;
@@ -36,7 +40,11 @@ $color-main: #0075FF;
     &-s {
         @extend .btn-sec;
         @include btn-sm-modify();
-        
+
     }
 
+}
+
+.main-menu {
+    
 }
