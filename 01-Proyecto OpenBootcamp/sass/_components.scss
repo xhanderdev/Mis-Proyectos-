@@ -5,5 +5,17 @@ $color-main: #0075FF;
     color: white;
     padding: 0.25rem 1.5rem;
     border-radius: 0.25rem;
-    border: none;
+    border: solid 1px $color-main;
+
+    &:hover {
+        background-color: white;
+        color: $color-main;
+    }
+
+    &-s {
+        @extend .btn-main;
+        font-size: 0.75rem;
+        padding: 0.1rem 1rem;
+
+    }
 }

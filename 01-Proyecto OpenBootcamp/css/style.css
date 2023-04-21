@@ -1,9 +1,18 @@
-.btn-main {
-  background-color: #0075FF;
-  color: white;
-  padding: 0.25rem 1.5rem;
-  border-radius: 0.25rem;
-  border: none;
-}
+/* Error: Expected identifier.
+ *    ,
+ * 24 |     @
+ *    |      ^
+ *    '
+ *   sass\_components.scss 24:6  @use
+ *   sass\style.scss 2:1         root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 24 \2502      @\d\a    \2502       ^\a    \2575 \a   sass\\_components.scss 24:6  @use\a   sass\\style.scss 2:1         root stylesheet";
+}
