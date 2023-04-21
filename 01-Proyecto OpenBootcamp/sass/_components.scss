@@ -1,3 +1,8 @@
+@mixin btn-sm-modify{
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+
+}
 $color-main: #0075FF;
 
 .btn-main {
@@ -14,7 +19,24 @@ $color-main: #0075FF;
 
     &-s {
         @extend .btn-main;
-        font-size: 0.75rem;
-        padding: 0.1rem 1rem;
+        @include btn-sm-modify();
     }
+}
+
+.btn-sec {
+    @extend .btn-main;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: #888;
+    }
+
+    &-s {
+        @extend .btn-sec;
+        @include btn-sm-modify();
+        
+    }
+
 }
